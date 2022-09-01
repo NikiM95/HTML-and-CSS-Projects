@@ -8,6 +8,7 @@ Projects:
 • Portfolio
 
 Project
+<br>
 This page is an example home page for a Space travel company. It is styled using CSS and contains a navbar, image containers and a form.
 
 bootstrap4_project
