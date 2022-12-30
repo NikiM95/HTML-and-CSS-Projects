@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Testing</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="./css/one_page_website.css">
+		<script src="js/one_page_website.js"></script>
+		
+	</head>
+	<body>
+		
+		<!-- NAV -->
+		<div class="wrap">
+			<div class="menu-container">
+				<ul class="menu">
+					<a href="#home"><li>HOME</li></a>
+					<a href="#video"><li>VIDEO</li></a>
+					<a href="#gallery"><li>GALLERY</li></a>
+					<a href="#contact"><li>CONTACT INFORMATION</li></a>
+				</ul>
+			</div>
+		</div>
+		<!-- END NAV -->
+				
+		<!-- HOME -->
+		<div id="home">
+			<div class="container">
+				<div class="text-center">
+					<span class="head-main">
+						<h1>Exploring Ireland</h1>
+						<p>Discover what Ireland has in store!</p>
+					</span>
+				</div>
+			</div>
+		</div>
+		<!-- END HOME -->
+				
+		<!-- Video -->
+		<section>
+			<div id="video">
+				<h1>Video</h1>
+				<div> 
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/kutw1rplg0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+		</section>
+		<!-- END VIDEO -->
+
+		<!-- GALLERY -->
+		<section id="gallery">
+			<div class="container">
+				<h1>Gallery</h1>
+				<div class="flex-container">
+					<div class="row">
+  						<div class="column">
+							<img src="images/thumb/thumbnail_1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  						</div>
+  						<div class="column">
+    						<img src="images/thumb/thumbnail_2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  						</div>
+  						<div class="column">
+    						<img src="images/thumb/thumbnail_3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  						</div>
+  						<div class="column">
+    						<img src="images/thumb/thumbnail_4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  						</div>
+					</div>
+
+					<div id="myModal" class="modal">
+						<span class="close cursor" onclick="closeModal()">&times;</span>
+						<div class="modal-content">
+
+    						<div class="mySlides">
+      							<div class="numbertext">1 / 4</div>
+      							<img src="images/thumb/thumbnail_1_wide.jpg" style="width:100%">
+    						</div>
+
+    						<div class="mySlides">
+      							<div class="numbertext">2 / 4</div>
+      								<img src="images/thumb/thumbnail_2_wide.jpg" style="width:100%">
+    						</div>
+
+    						<div class="mySlides">
+      							<div class="numbertext">3 / 4</div>
+      							<img src="images/thumb/thumbnail_3_wide.jpg" style="width:100%">
+    						</div>
+    
+    						<div class="mySlides">
+      							<div class="numbertext">4 / 4</div>
+      							<img src="images/thumb/thumbnail_4_wide.jpg" style="width:100%">
+    						</div>
+    
+    						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    						<div class="caption-container">
+      							<p id="caption"></p>
+    						</div>
+
+
+    						<div class="column">
+      							<img class="demo cursor" src="images/thumb/thumbnail_1_wide.jpg" style="width:100%" onclick="currentSlide(1)" alt="Grab a beer at the Guinness Storehouse">
+    						</div>
+    						<div class="column">
+      							<img class="demo cursor" src="images/thumb/thumbnail_2_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Branch out in Belfast">
+    						</div>
+    						<div class="column">
+     				 			<img class="demo cursor" src="images/thumb/thumbnail_3_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="Get out to Giant's Causeway">
+    						</div>
+    						<div class="column">
+      							<img class="demo cursor" src="images/thumb/thumbnail_4_wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="Explore the world of Game of Thrones">
+    						</div>
+  						</div>
+					</div>	
+				</div>
+			</div>
+		</section>
+		<!-- END GALLERY -->
+
+		<!-- CONTACT -->
+		<section id="contact">
+			<div class="container">
+				<div class="heading-padding">
+					<h1 class="heading-padding">Contact us for more details</h1>
+					<div class="information">
+						<h2><span>Discover Ireland today!</span></h2>
+						<p class="rsvp-text">
+							Please provide us with your basic contact information.
+						</p>
+						<div class="form-rsvp">
+							<form action="" method="post">
+								<input class="contact" type="text" value="" placeholder="First Name">
+								<input class="contact" type="text" value="" placeholder="Last Name">
+								<input class="contact" type="text" value="" placeholder="Email Address">
+								<input class="contact" type="text" value="" placeholder="Phone Number">
+								<div class="form-spacer">
+									<label class="terms">Terms and Conditions</label>
+								</div>
+								<div class="submit">
+									<input type="submit" value="Submit">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<br>
+		<!-- END CONTACT -->
+		
+		<!-- FOOTER -->
+		<div>
+			www.visitireland.explore &nbsp;|&nbsp; &copy; 2022
+		</div>
+		<!-- END FOOTER -->
+
+	</body>
+</html>
